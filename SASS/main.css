@@ -898,6 +898,15 @@ body {
   text-align: right;
   animation: dance2 4s alternate infinite;
 }
+.testo-section .testi-list .owl-item .testi-single-box .company .rating ul {
+  margin: 0;
+  padding: 0;
+}
+.testo-section .testi-list .owl-item .testi-single-box .company .rating ul li i {
+  font-size: 15px;
+  letter-spacing: 7px;
+  color: #ffa133;
+}
 .testo-section .about-bg2 {
   padding-top: 110px;
   border-top: 1px solid rgba(16, 18, 16, 0.1019607843);

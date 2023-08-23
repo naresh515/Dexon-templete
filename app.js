@@ -86,10 +86,34 @@ $(document).ready(function () {
   });
 
   let sticky = $(".dexon_nav_manu");
+  isScrolled = false;
   $(window).scroll(function () {
     var scroll = $(window).scrollTop();
-    if (scroll >= 100) sticky.addClass("fixed");
-    else sticky.removeClass("fixed");
+    if (scroll >= 100) {
+      sticky.addClass("fixed");
+    } else {
+      sticky.removeClass("fixed");
+    }
+    if (scroll >= 4000 && isScrolled == false) {
+      isScrolled = true;
+      $(".counter").each(function () {
+        var countValue = parseInt($(this).text());
+        $(this)
+          .prop("Counter", 0)
+          .animate(
+            {
+              Counter: countValue,
+            },
+            {
+              duration: 3000,
+              easing: "swing",
+              step: function (now) {
+                $(this).text(Math.ceil(now));
+              },
+            }
+          );
+      });
+    }
   });
 
   $(".humberg2").click(function () {
