@@ -1,0 +1,119 @@
+@media screen and (min-width: 320px) and (max-width: 800px) {
+  .dexon_nav_manu {
+    display: none;
+  }
+
+  .hero-all-shape {
+    display: none;
+  }
+
+  .hero-section .hero-content {
+    padding-right: 0px;
+  }
+
+  .hero-section .hero-content h1:before {
+    display: none;
+  }
+
+  .hero-section .hero-content h2::before {
+    display: none;
+  }
+
+  .hero-section .hero-content h1 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 30px;
+  }
+
+  .hero-section .hero-content h2 {
+    font-size: 30px;
+    padding: 0px 0 20px 0px;
+  }
+
+  .hero-section .hero-content .hero-content-text-btn {
+    margin-left: 0;
+  }
+
+  .hero-section .hero-content .hero-content-text-btn p {
+    width: 100%;
+  }
+
+  .hero-section .hero-content .hero-content-text-btn .hero-button a {
+    margin-left: 0;
+  }
+  .feature-section .row .dexon-section-title h1 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .feature-section .feature-single-box .feature-content h2 {
+    font-size: 26px;
+  }
+  .about-thumb {
+    margin-bottom: 40px;
+  }
+  .about-thumb img {
+    width: 100%;
+  }
+  .hero-section {
+    height: 700px;
+  }
+  .feature-section .counter-bg .single-counter-box .counter-title h1 {
+    font-size: 35px;
+  }
+  .feature-section .counter-bg .single-counter-box .counter-title {
+    justify-content: center;
+  }
+  .feature-section .counter-bg .single-counter-box .counter-text p {
+    text-align: center;
+  }
+  .service-section .dexon-section-title h1 {
+    line-height: 30px;
+    font-size: 22px;
+  }
+  .service-section .dexon-section-title .service-sec {
+    margin-top: 0px;
+  }
+  .service-section .dream1-bg {
+    display: flex;
+  }
+  .testo-section .about-bg2 .about-title h1 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .testo-section .about-bg2 .about-counter .counter-num .counter-title h1 {
+    font-size: 35px;
+  }
+  .testo-section .about-bg2 .about-profile {
+    padding-left: 0;
+    padding-top: 25px;
+  }
+  .footer-section .widget-title {
+    padding: 25px 0 13px;
+  }
+  .footer-section .footer-bg .footer-bottom-content-copy p {
+    text-align: center;
+  }
+  .footer-section .footer-bg .text-right {
+    text-align: center;
+  }
+  .footer-section .footer-bg .text-right ul li {
+    padding-left: 20px;
+  }
+  .service-section .services-shapes {
+    display: none;
+  }
+  .feature-section,
+  .call-to-action {
+    overflow: hidden;
+  }
+  .call-shape {
+    display: none;
+  }
+  .dream-shape img {
+    width: 100%;
+  }
+  .hero-section {
+    position: relative;
+    z-index: 2;
+  }
+}

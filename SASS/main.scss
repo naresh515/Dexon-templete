@@ -1,0 +1,1276 @@
+@import "mixin";
+@import "variables";
+body {
+  margin: $margin-auto;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.navbar-nav {
+  margin: $margin-auto !important;
+}
+.dexon_nav_manu {
+  &.fixed {
+    @include fixed;
+    background: black;
+    .withoutFixed {
+      display: none;
+    }
+    .withFixed {
+      display: inline-block !important;
+    }
+    .nav-link {
+      color: $white-color;
+    }
+    .header-btn {
+      .btn {
+        background: $bg-color !important;
+        color: $dark-color !important;
+      }
+      i {
+        color: $dark-color;
+      }
+    }
+  }
+}
+
+.dexon_nav_manu {
+  transition: $transtion-5;
+  z-index: 2;
+  position: relative;
+  padding: 0 $padding-70 0;
+  margin-bottom: $margin--95;
+  border-bottom: $border-size-1 solid $border-color;
+  .navbar-expand-lg {
+    padding-top: unset !important;
+    padding-bottom: unset !important;
+  }
+}
+
+.container-fluid {
+  .logo {
+    .logo-images {
+      .withoutFixed {
+        width: 170px;
+      }
+      .withFixed {
+        display: none;
+      }
+    }
+  }
+  .header-btn {
+    display: inline-block;
+    .btn {
+      font-weight: 500;
+      color: $white-color;
+      background: $dark-color;
+      border-radius: $b-r-5;
+      display: inline-block;
+      position: relative;
+      z-index: 1;
+      transition: $transtion-5;
+      padding: $padding-10 $padding-30;
+      font-size: $font-size-14;
+    }
+    i {
+      padding-right: $padding-5;
+      position: relative;
+      top: 3px;
+      color: $bg-color;
+      transition: $transtion-5;
+    }
+  }
+}
+.nav-item {
+  &:hover {
+    .dropdown-menu {
+      display: inline-block;
+      border-top: 2px solid $bg-color;
+      width: 217px;
+      background: $white-color;
+      box-shadow: 0px $border-size-1 3px $box-shadow;
+      transition: $transtion-5;
+      margin: 0;
+      padding: 0px;
+      a {
+        display: block;
+        padding: $padding-12 $padding-20;
+        margin: 0;
+        line-height: $line-height-1;
+        letter-spacing: normal;
+        font-size: $font-size-16;
+        font-weight: 500;
+        text-transform: capitalize;
+        -webkit-transition: 0.1s;
+        transition: 0.1s;
+        visibility: inherit !important;
+        color: $dark-color !important;
+      }
+      li {
+        &:hover a {
+          background: $bg-color;
+          color: $light-dark-color !important;
+        }
+      }
+    }
+  }
+}
+
+.nav-item {
+  .nav-link {
+    margin: $margin-30 $margin-6 !important;
+    font-size: $font-size-15 !important;
+    padding: 0px $padding-5 0px $padding-5 !important;
+    transition: $transtion-5;
+    color: $dark-color;
+    font-weight: 500;
+    &:hover {
+      color: $bg-color;
+    }
+    span {
+      font-size: $font-size-11;
+      padding-left: $padding-5;
+      opacity: 0.5;
+    }
+  }
+}
+
+.mobile-menu-area {
+  left: 0;
+  margin: auto;
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px -2px $box-shadow-light;
+  background: $dark-color !important;
+  transition: $transtion-5 !important;
+  z-index: 922;
+  animation: 500ms running fadeInUp;
+  animation-name: slideInDown;
+  @keyframes slideInDown {
+    0% {
+      transform: translate3d(0, -100%, 0);
+      visibility: visible;
+    }
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  .menu-bar {
+    background: $bg-color;
+    min-height: 60px;
+    padding: $padding-4 0 0;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    &:before {
+      color: $white-color;
+      content: "Dexon";
+      font-size: $font-size-28;
+      font-weight: 600;
+      left: 10px;
+      position: absolute;
+      top: 18px;
+      line-height: $line-height-26;
+      text-align: left;
+      font-family: "Kumbh Sans", sans-serif;
+    }
+    .humberg2 {
+      width: 22px;
+      height: 22px;
+      cursor: pointer;
+      text-decoration: none;
+      line-height: $line-height-22;
+      font-size: $font-size-18;
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      float: right;
+      padding: $padding-18;
+      text-align: center;
+      text-indent: 0;
+      margin-right: $margin-20;
+      span {
+        display: block;
+        background: $white-color;
+        height: 3px;
+        margin-top: $margin-3;
+        width: 21px;
+      }
+      &.is-active {
+        .line2 {
+          opacity: 0;
+          transition: all $transtion-5 ease-out;
+        }
+        .line1 {
+          transform: translateY(6px) rotate(50deg);
+        }
+        .line3 {
+          transform: translateY(-6px) rotate(-45deg);
+        }
+      }
+    }
+    .menu-nav {
+      float: left;
+      width: 100%;
+      box-sizing: content-box;
+      margin-top: $margin-20;
+      display: none;
+      &.nav-open {
+        display: inline-block;
+      }
+      ul {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        list-style-type: none;
+        border: none;
+        .show {
+          position: relative !important;
+          inset: 0px auto auto 0px;
+          margin: 0px;
+          transform: translate3d(0px, 0px, 0px) !important;
+        }
+        li {
+          background: $light-bg-color;
+          float: left;
+          position: relative;
+          width: 100%;
+          border-top: $border-size-1 solid $b-color;
+          .nav-link {
+            background: $light-bg-color;
+            color: $link-color;
+            display: block;
+            float: left;
+            font-size: $font-size-14;
+            margin: 0;
+            padding: 1em 5%;
+            text-align: left;
+            text-decoration: none;
+            text-transform: capitalize;
+            width: 90%;
+          }
+          .mean-expand {
+            background: none;
+            top: -4px;
+            font-size: 18px;
+            height: $font-size-15;
+            margin-top: $border-size-1;
+            padding: $padding-12 $padding-22 $padding-12 $padding-12 !important;
+            text-align: right;
+            position: absolute;
+            right: 0;
+            z-index: 2;
+            font-weight: 700;
+            border: 0 !important;
+            color: $link-color;
+            text-decoration: none;
+          }
+          .dropdown-menu {
+            li {
+              background: #d3d3d3;
+              float: left;
+              position: relative;
+              width: 100%;
+              border-top: $border-size-1 solid $b-color;
+              a {
+                border-top: $border-size-1 solid $border-top-shadow;
+                color: $link-color;
+                font-size: $font-size-14;
+                font-weight: 500;
+                opacity: 0.75;
+                padding: 1em 10%;
+                text-shadow: none !important;
+                text-transform: capitalize;
+                visibility: visible;
+                width: 80%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.hero-section {
+  background-image: url(../img/hero-bg.jpg);
+  overflow: hidden;
+  @include bg-img;
+  height: 900px;
+  .row {
+    position: relative;
+    z-index: 1;
+    margin-top: $margin-75;
+  }
+  .hero-content {
+    text-align: center;
+    padding-right: $padding-60;
+    h1 {
+      @include headeing;
+      font-weight: 600 !important;
+      padding-left: 0px;
+      &:before {
+        position: absolute;
+        content: "";
+        right: -150px;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: url(../img/hero-shap3.png);
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: contain;
+        z-index: -1;
+      }
+    }
+    h2 {
+      @include headeing;
+      padding: $padding-5 0 $padding-52 $padding-340;
+      &::before {
+        position: absolute;
+        content: "";
+        left: 139px;
+        top: -24px;
+        width: 100%;
+        height: 100%;
+        background: url(../img/shap4.png);
+        background-repeat: no-repeat;
+        background-position: left;
+        z-index: -1;
+      }
+    }
+    .hero-content-text-btn {
+      margin-left: $margin-120;
+      p {
+        font-size: $font-size-18;
+        width: 49%;
+        max-width: 100%;
+        margin: auto;
+        color: $dark-color;
+        font-weight: 500;
+      }
+      .hero-button {
+        a {
+          font-size: $font-size-16;
+          padding: $padding-12 $padding-38 $font-size-15;
+          background: $dark-color;
+          color: $white-color;
+          font-weight: 500;
+          display: inline-block;
+          border-radius: $b-r-5;
+          position: relative;
+          z-index: 1;
+          transition: $transtion-5;
+          margin-top: $margin-38;
+          margin-left: $margin-50;
+          text-decoration: none;
+          font-style: normal;
+          i {
+            font-size: $font-size-16;
+            position: relative;
+            left: 8px;
+            top: 5px;
+            transform: rotate(-52deg);
+            transition: $transtion-5;
+            display: inline-block;
+            color: $white-color;
+          }
+        }
+      }
+    }
+    .hero-all-shape {
+      .hero-shape {
+        position: absolute;
+        bottom: -8rem;
+        left: -290px;
+        img {
+          vertical-align: middle;
+        }
+      }
+      .hero-shape2 {
+        position: absolute;
+        right: -17rem;
+        top: 4rem;
+        img {
+          vertical-align: middle;
+        }
+      }
+      .hero-shape3 {
+        position: absolute;
+        left: 116px;
+        right: 0;
+        top: 175px;
+        img {
+          vertical-align: middle;
+        }
+      }
+      .hero-shape4 {
+        position: absolute;
+        right: -14rem;
+        top: -16rem;
+        img {
+          vertical-align: middle;
+        }
+      }
+      .hero-shape5 {
+        position: absolute;
+        left: 92px;
+        bottom: -113px;
+        animation-name: rotateme;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        img {
+          vertical-align: middle;
+        }
+        @keyframes rotateme {
+          0% {
+            transform: rotate(0deg);
+          }
+          100% {
+            transform: rotate(360deg);
+          }
+        }
+      }
+    }
+  }
+}
+
+.feature-section {
+  background-image: url(../img/feature-bg.jpg);
+  @include bg-img;
+  padding: $padding-110 0 $padding-100;
+  .row {
+    &.dream-bg {
+      position: relative;
+      z-index: 1;
+    }
+    .dexon-section-title {
+      padding: 0 0 $padding-76;
+      h1 {
+        font-size: $font-size-38;
+        line-height: $line-height-44;
+        margin: 0;
+        color: $dark-color;
+        font-family: "Clash Display", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        transition: $transtion-5;
+      }
+    }
+    .dream-shape {
+      position: absolute;
+      top: -50px;
+      left: -90px;
+      z-index: -1;
+    }
+    .dream-shape2 {
+      position: absolute;
+      right: 0;
+      top: 4rem;
+      text-align: right;
+      animation: dance2 4s alternate infinite;
+      @keyframes dance2 {
+        0% {
+          -webkit-transform: translate3d(0, 0, 0);
+        }
+        50% {
+          -webkit-transform: translate3d(25px, -25px, 0);
+        }
+        100% {
+          -webkit-transform: translate3d(0, -25px, 25px);
+        }
+      }
+    }
+  }
+  .feature-single-box {
+    padding: $padding-45 $padding-50 $padding-28;
+    margin-bottom: $margin-30;
+    text-align: center;
+    background: $white-color;
+    border-radius: $b-r-30;
+    filter: drop-shadow(0px 5px $font-size-15 $filter-coloe);
+    transition: $transtion-5;
+    .feature-content {
+      text-align: center;
+      h2 {
+        font-size: $font-size-25;
+        font-weight: 500;
+        padding: $padding-23 0 $padding-20;
+        color: $dark-color;
+        font-family: "Clash Display", sans-serif;
+        font-style: normal;
+        margin-bottom: 0;
+        margin-top: $font-size-11;
+        line-height: $line-height-2;
+        transition: $transtion-5;
+      }
+      p {
+        padding: $padding-18 0 0;
+        color: $gray-color;
+        font-size: $font-size-16;
+        line-height: $line-height-26;
+        text-align: center;
+        font-family: "Kumbh Sans", sans-serif;
+      }
+    }
+  }
+  .about-bg {
+    padding: $padding-90 0 0;
+    .dexon-section-title {
+      padding: 0px;
+      p {
+        padding: $padding-18 0 0;
+        color: $gray-color;
+        font-size: $font-size-16;
+        line-height: $line-height-26;
+        text-align: left;
+        font-family: "Kumbh Sans", sans-serif;
+      }
+    }
+    .about-item-list {
+      padding: $padding-20 0 0;
+      border-top: $border-size-1 solid $border-color;
+      margin-top: $margin-30;
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          list-style: none;
+          padding: $padding-5 0 $padding-3;
+          color: $gray-color;
+          font-size: $font-size-16;
+          line-height: $line-height-26;
+          font-family: "Kumbh Sans", sans-serif;
+        }
+      }
+    }
+    .about-btn {
+      padding: $padding-28 0 0;
+      a {
+        font-weight: 500;
+        text-decoration: underline;
+        color: $dark-color;
+        transition: $transtion-5;
+        position: relative;
+        z-index: 2;
+        i {
+          @include rotateBtn;
+        }
+      }
+    }
+  }
+  .counter-bg {
+    padding: $padding-95 0 0;
+    position: relative;
+    z-index: 1;
+    .single-counter-box {
+      .counter-title {
+        display: flex;
+        h1 {
+          font-size: $font-size-50;
+          font-weight: 500;
+          display: inline-block;
+          color: $dark-color;
+          font-family: "Clash Display", sans-serif;
+          font-style: normal;
+          margin-bottom: 0;
+          margin-top: $font-size-11;
+          line-height: $line-height-2;
+          transition: $transtion-5;
+        }
+      }
+      .counter-text {
+        p {
+          display: block;
+          padding: $padding-5 0 0;
+          color: $gray-color;
+          font-size: $font-size-16;
+          line-height: $line-height-26;
+          text-align: left;
+          font-family: "Kumbh Sans", sans-serif;
+        }
+      }
+    }
+    .dream-shape3 {
+      position: absolute;
+      left: -19rem;
+      bottom: -96px;
+      z-index: -1;
+    }
+    .dream-shape4 {
+      position: absolute;
+      right: -4rem;
+      text-align: right;
+      bottom: 11rem;
+      animation: dance2 4s alternate infinite;
+    }
+  }
+}
+
+.service-section {
+  background-image: url(../img/service-bg.jpg);
+  @include bg-img;
+  padding: $padding-135 0px $padding-90;
+  .dream1-bg {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .dexon-section-title {
+    display: flex;
+    flex-direction: column;
+    h1 {
+      font-size: $font-size-50;
+      font-weight: 500;
+      display: inline-block;
+      color: $white-color;
+      font-family: "Clash Display", sans-serif;
+      font-style: normal;
+      transition: $transtion-5;
+      line-height: 0;
+    }
+    .service-sec {
+      margin-top: $margin-48;
+    }
+    p {
+      padding: $padding-40 0px $padding-34;
+      color: $white-color;
+      font-size: $font-size-16;
+      line-height: $line-height-26;
+      font-family: "Kumbh Sans", sans-serif;
+      margin: 0px;
+    }
+  }
+  .upper2 {
+    background-image: url(../img/box-bg2.png);
+    @include bg-img;
+    height: 500px;
+    padding: $padding-35 $padding-40 $padding-30;
+    border-radius: $b-r-20;
+    margin-bottom: $margin-30;
+    .service-content {
+      display: flex;
+      flex-direction: column;
+      .service-heading {
+        font-size: $font-size-26;
+        font-weight: 500;
+        transition: $transtion-5;
+        color: $dark-color;
+        font-family: "Clash Display", sans-serif;
+        font-style: normal;
+        margin-bottom: 0;
+        margin-top: $font-size-11;
+        line-height: $line-height-2;
+      }
+      .service-title {
+        color: $dark-color;
+        display: inline-block;
+        padding: $font-size-15 0 $padding-5;
+        font-style: normal;
+        font-weight: 400;
+        line-height: $line-height-26;
+        text-align: left;
+        font-family: "Kumbh Sans", sans-serif;
+        font-size: $font-size-16;
+      }
+      .service-btn {
+        font-weight: 500;
+        text-decoration: underline;
+        color: $dark-color;
+        transition: $transtion-5;
+        position: relative;
+        z-index: 2;
+        line-height: $line-height-26;
+        text-align: left;
+        font-family: "Kumbh Sans", sans-serif;
+        font-size: $font-size-16;
+        i {
+          @include rotateBtn;
+        }
+      }
+    }
+  }
+  .upper {
+    background-image: url(../img/box-bg1.png);
+    @include bg-img;
+    height: 330px;
+    padding: $padding-35 $padding-40 $padding-30;
+    border-radius: $b-r-20;
+    margin-bottom: $margin-30;
+    .service-content {
+      display: flex;
+      flex-direction: column;
+      .service-heading {
+        font-size: $font-size-26;
+        font-weight: 500;
+        transition: $transtion-5;
+        color: $dark-color;
+        font-family: "Clash Display", sans-serif;
+        font-style: normal;
+        margin-bottom: 0;
+        margin-top: $font-size-11;
+        line-height: $line-height-2;
+      }
+      .service-title {
+        color: $dark-color;
+        display: inline-block;
+        padding: $font-size-15 0 $padding-5;
+        font-style: normal;
+        font-weight: 400;
+        line-height: $line-height-26;
+        text-align: left;
+        font-family: "Kumbh Sans", sans-serif;
+        font-size: $font-size-16;
+      }
+      .service-btn {
+        font-weight: 500;
+        text-decoration: underline;
+        color: $dark-color;
+        transition: $transtion-5;
+        position: relative;
+        z-index: 2;
+        line-height: $line-height-26;
+        text-align: left;
+        font-family: "Kumbh Sans", sans-serif;
+        font-size: $font-size-16;
+        i {
+          @include rotateBtn;
+        }
+      }
+    }
+  }
+  .upper3 {
+    background-image: url(../img/box-bg3.png);
+    @include bg-img;
+    height: 330px;
+    padding: $padding-35 $padding-40 $padding-30;
+    border-radius: $b-r-20;
+    margin-bottom: $margin-30;
+    .service-content {
+      display: flex;
+      flex-direction: column;
+      .service-heading {
+        font-size: $font-size-26;
+        font-weight: 500;
+        transition: $transtion-5;
+        color: $dark-color;
+        font-family: "Clash Display", sans-serif;
+        font-style: normal;
+        margin-bottom: 0;
+        margin-top: $font-size-11;
+        line-height: $line-height-2;
+      }
+      .service-title {
+        color: $dark-color;
+        display: inline-block;
+        padding: $font-size-15 0 $padding-5;
+        font-style: normal;
+        font-weight: 400;
+        line-height: $line-height-26;
+        text-align: left;
+        font-family: "Kumbh Sans", sans-serif;
+        font-size: $font-size-16;
+      }
+      .service-btn {
+        font-weight: 500;
+        text-decoration: underline;
+        color: $dark-color;
+        transition: $transtion-5;
+        position: relative;
+        z-index: 2;
+        line-height: $line-height-26;
+        text-align: left;
+        font-family: "Kumbh Sans", sans-serif;
+        font-size: $font-size-16;
+        i {
+          @include rotateBtn;
+        }
+      }
+    }
+  }
+  .services-shapes {
+    position: absolute;
+    top: -45px;
+    left: 34rem;
+    animation-name: moveleftbounce;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    @keyframes moveleftbounce {
+      0% {
+        transform: translate(0px);
+      }
+      50% {
+        transform: translate(20px);
+      }
+      100% {
+        transform: translate(0px);
+      }
+    }
+  }
+  .services-shapes2 {
+    position: absolute;
+    left: -14rem;
+    top: 75px;
+    animation: dance3 4s alternate infinite;
+    @keyframes dance3 {
+      0% {
+        transform: scale(0.5);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  }
+}
+
+.testo-section {
+  background-image: url(../img/testi-bg.jpg);
+  @include bg-img;
+  padding: $padding-110 0px;
+  .dream-bg {
+    position: relative;
+    z-index: 1;
+    .dreamit {
+      padding: 0px 0px $padding-39;
+      display: flex;
+      flex-direction: column;
+      h1 {
+        font-size: $font-size-38;
+        line-height: $line-height-44;
+        margin: 0;
+        font-weight: 600;
+        display: inline-block;
+        color: $dark-color;
+        font-family: "Clash Display", sans-serif;
+        font-style: normal;
+        transition: $transtion-5;
+      }
+      p {
+        padding: $padding-18 0 0;
+        width: 43%;
+        margin: auto;
+        color: $gray-color;
+        font-size: $font-size-16;
+      }
+    }
+    .dream-shape {
+      position: absolute;
+      top: -50px;
+      left: 0;
+      text-align: center;
+      z-index: -1;
+    }
+    .testo-shape1 {
+      position: absolute;
+      left: 9rem;
+      top: 30px;
+      animation-name: rotateme;
+      animation-duration: 20s;
+      animation-iteration-count: infinite;
+    }
+    .testo-shape2 {
+      position: absolute;
+      right: 7rem;
+      bottom: 5rem;
+      text-align: right;
+      animation: dance2 4s alternate infinite;
+    }
+  }
+  .about-bg2 {
+    padding-top: $padding-110;
+    border-top: $border-size-1 solid $border-color;
+    margin-top: $margin-115;
+    .about-title {
+      h1 {
+        font-size: $font-size-38;
+        line-height: $line-height-44;
+        margin: 0;
+        font-weight: 600;
+        display: inline-block;
+        color: $dark-color;
+        font-family: "Clash Display", sans-serif;
+        font-style: normal;
+        transition: $transtion-5;
+      }
+      p {
+        padding: $padding-18 0 0;
+        margin: auto;
+        color: $gray-color;
+        font-size: $font-size-16;
+        font-family: "Kumbh Sans", sans-serif;
+        line-height: $line-height-26;
+      }
+    }
+    .about-counter {
+      border-top: $border-size-1 solid $border-color;
+      border-bottom: $border-size-1 solid $border-color;
+      padding: $padding-8 0 $padding-17;
+      margin: $margin-28 0 $margin-28;
+      .counter-num {
+        display: flex;
+        align-items: center;
+        .counter-title {
+          display: flex;
+          align-items: center;
+          h1 {
+            color: $dark-color;
+            font-family: "Clash Display", sans-serif;
+            font-style: normal;
+            margin-bottom: 0;
+            margin-top: $font-size-11;
+            line-height: $line-height-2;
+            transition: $transtion-5;
+            font-size: $font-size-44;
+            font-weight: 500;
+          }
+        }
+        .counter-text {
+          span {
+            padding: 0 0 0 $font-size-15;
+            margin-left: $font-size-15;
+            border-left: $border-size-1 solid $border-left;
+            color: $gray-color;
+          }
+        }
+      }
+    }
+    .about-profile-btn {
+      a {
+        font-weight: 500;
+        text-decoration: underline;
+        color: $dark-color;
+        transition: $transtion-5;
+        position: relative;
+        z-index: 2;
+        font-size: $font-size-16;
+        font-family: "Kumbh Sans", sans-serif;
+        line-height: $line-height-26;
+        i {
+          @include rotateBtn;
+        }
+      }
+    }
+    .about-profile {
+      padding-left: $padding-110;
+      position: relative;
+      z-index: 1;
+      .about-profile-img {
+        .main-img {
+          width: 100%;
+        }
+        .about-profile-shape {
+          img {
+            position: absolute;
+            left: 110px;
+            bottom: -3px;
+            animation: dance3 4s alternate infinite;
+          }
+        }
+      }
+    }
+  }
+}
+
+.call-to-action {
+  background-image: url(../img/call-bg.png);
+  @include bg-img;
+  padding: $padding-110 0 $padding-114;
+  .dexon1-bg {
+    position: relative;
+    z-index: 1;
+    .call-title {
+      h1 {
+        font-size: $font-size-38;
+        line-height: $line-height-44;
+        margin: 0;
+        font-family: "Clash Display", sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        transition: $transtion-5;
+      }
+      p {
+        padding: $padding-18 $padding-10 0px 0px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: $line-height-26;
+        text-align: left;
+        font-family: "Kumbh Sans", sans-serif;
+        font-size: $font-size-16;
+      }
+    }
+    .call-btn {
+      a {
+        color: $bg-color;
+        padding: $padding-10 0 0;
+        display: inline-block;
+        font-weight: 500;
+        text-decoration: underline;
+        transition: $transtion-5;
+        position: relative;
+        z-index: 2;
+        i {
+          @include rotateBtn;
+        }
+      }
+    }
+    .call-all-shape {
+      .call-shape {
+        position: absolute;
+        left: -19rem;
+        top: -7rem;
+        animation-name: moveleftbounce;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+      }
+      .call-shape1 {
+        position: absolute;
+        bottom: -15px;
+        right: -3rem;
+        animation-name: moveleftbounce;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+      }
+      .call-shape2 {
+        position: absolute;
+        left: 80px;
+        text-align: center;
+        right: 0;
+        top: -33px;
+        animation: dance2 4s alternate infinite;
+      }
+    }
+    .call-info {
+      text-align: center;
+      .call-number {
+        h1 {
+          font-size: $font-size-30;
+          font-weight: 500;
+          padding: $padding-18 0 $padding-13;
+          font-family: "Clash Display", sans-serif;
+          font-style: normal;
+          margin-bottom: 0;
+          margin-top: $font-size-11;
+          line-height: $line-height-2;
+          transition: $transtion-5;
+        }
+      }
+      .call-text {
+        span {
+          color: $light-gray-color;
+          font-size: $font-size-16;
+          font-weight: 400;
+          line-height: $line-height-26;
+          font-family: "Kumbh Sans", sans-serif;
+        }
+      }
+    }
+  }
+}
+
+.footer-section {
+  background-image: url(../img/footer-bg.jpg);
+  @include bg-img;
+  padding: $padding-118 0 0px;
+  .dexon-info {
+    p {
+      padding: $padding-27 0 $padding-9;
+      font-weight: 400;
+      font-style: normal;
+      color: $gray-color;
+      font-size: $font-size-16;
+      line-height: $line-height-26;
+      text-align: left;
+      font-family: "Kumbh Sans", sans-serif;
+    }
+  }
+  .social-media {
+    a {
+      color: $light-gray-color;
+      font-size: $font-size-17;
+      display: inline-block;
+      margin-right: $margin-21;
+      transition: $transtion-5;
+    }
+  }
+  .widget-title {
+    font-size: $font-size-24;
+    font-weight: 500;
+    margin-top: $margin--5;
+    padding: 0 0 $padding-21;
+    color: $dark-color;
+    font-family: "Clash Display", sans-serif;
+    font-style: normal;
+    margin-bottom: 0;
+    line-height: $line-height-2;
+    transition: $transtion-5;
+  }
+  .footer-menu {
+    margin: 0;
+    padding: 0;
+    li {
+      display: block;
+      list-style: none;
+      padding: 0 0 $padding-10;
+      a {
+        transition: 0.6s;
+        color: $gray-color;
+        text-decoration: none;
+      }
+      .hovered {
+        &:hover {
+          color: $bg-color;
+        }
+      }
+      .border-line {
+        text-decoration: underline;
+      }
+    }
+  }
+  .subscribe-widget {
+    padding: $padding-8 0px 0px;
+    form {
+      position: relative;
+      .src-input-box {
+        position: relative;
+        height: 54px;
+        width: 94%;
+        border: $border-size-1 solid $all-border-color;
+        padding: 0 $padding-25 0;
+        &:focus {
+          outline-color: $bg-color;
+          border: $border-size-1 solid $bg-color !important;
+        }
+      }
+      span {
+        position: absolute;
+        right: 42px;
+        top: $font-size-15;
+        cursor: pointer;
+      }
+    }
+  }
+  .widget-desc {
+    p {
+      padding: $padding-23 0 0;
+      font-weight: 400;
+      font-style: normal;
+      color: $gray-color;
+      font-size: $font-size-16;
+      line-height: $line-height-26;
+      text-align: left;
+      font-family: "Kumbh Sans", sans-serif;
+    }
+  }
+  .footer-bg {
+    position: relative;
+    z-index: 1;
+    border-top: $border-size-1 solid $border-color;
+    margin: $margin-100 0 0;
+    padding: $padding-25 0 $padding-13;
+    .footer-bottom-content-copy {
+      p {
+        color: $dark-color;
+        font-size: $font-size-16;
+        font-weight: 400;
+        line-height: $line-height-26;
+        font-family: "Kumbh Sans", sans-serif;
+      }
+    }
+    .text-right {
+      text-align: right;
+      ul {
+        margin: 0;
+        padding: 0;
+        li {
+          list-style: none;
+          display: inline-block;
+          padding-left: $padding-42;
+          font-style: normal;
+          font-weight: 400;
+          color: $gray-color;
+          font-size: $font-size-16;
+          line-height: $line-height-26;
+          font-family: "Kumbh Sans", sans-serif;
+          a {
+            color: $light-dark-color;
+            text-decoration: none;
+            transition: $transtion-5;
+            font-style: normal;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+.prgoress_indicator {
+  position: fixed;
+  right: 50px;
+  bottom: 20px;
+  height: 46px;
+  width: 46px;
+  cursor: pointer;
+  display: block;
+  border-radius: $-b-r-50;
+  box-shadow: inset 0 0 0 2px $box-shadow-dark;
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY($font-size-15);
+  transform: translateY($font-size-15);
+  transition: all 200ms linear;
+  &:before {
+    position: absolute;
+    content: "\F286";
+    font-family: "bootstrap-icons";
+    text-align: center;
+    line-height: $line-height-46;
+    font-size: $font-size-18;
+    font-weight: 900;
+    opacity: 0;
+    background-clip: text;
+    left: 0;
+    top: 0;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    z-index: 2;
+    transition: all 200ms linear !important;
+  }
+  &:after {
+    position: absolute;
+    content: "\F286";
+    font-family: "bootstrap-icons";
+    text-align: center;
+    line-height: $line-height-46;
+    font-size: $font-size-18;
+    color: $bg-color;
+    left: 0;
+    top: 0;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    display: block;
+    font-weight: 900;
+    z-index: 1;
+    transition: all 200ms linear !important;
+  }
+  &.active-progress {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  svg.progress-circle path {
+    stroke: #bbf737;
+    stroke-width: 4;
+    box-sizing: border-box;
+    transition: all 200ms linear !important;
+    fill: none;
+  }
+}
+
+@import "mobile";

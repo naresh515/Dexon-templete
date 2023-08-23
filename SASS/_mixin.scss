@@ -1,0 +1,38 @@
+@mixin flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin bg-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin headeing {
+  font-size: 80px;
+  font-weight: 500;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  color: #101210;
+  font-family: "Clash Display", sans-serif;
+  font-style: normal;
+  margin-bottom: 0;
+  margin-top: 11px;
+  transition: 0.5s;
+}
+
+@mixin rotateBtn {
+  font-size: 28px;
+  position: relative;
+  top: 5px;
+  transform: rotate(-45deg);
+  display: inline-block;
+}
+
+@mixin fixed {
+  position: fixed;
+  width: 100%;
+}
