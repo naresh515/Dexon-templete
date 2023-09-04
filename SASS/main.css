@@ -1,8 +1,16 @@
+@font-face {
+  font-family: "Clash Display";
+  src: url("https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&family=Forum&display=swap");
+}
+@font-face {
+  font-family: "Kumbh Sans";
+  src: url("https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&family=Forum&family=Kumbh+Sans:wght@600&display=swap");
+}
 body {
   margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans";
 }
 
 .navbar-nav {
@@ -158,7 +166,7 @@ body {
   top: 18px;
   line-height: 26px;
   text-align: left;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans";
 }
 .mobile-menu-area .menu-bar .humberg2 {
   width: 22px;
@@ -303,6 +311,7 @@ body {
   transition: 0.5s;
   font-weight: 600 !important;
   padding-left: 0px;
+  line-height: 60px;
 }
 .hero-section .hero-content h1:before {
   position: absolute;
@@ -452,7 +461,7 @@ body {
   line-height: 44px;
   margin: 0;
   color: #101210;
-  font-family: "Clash Display", sans-serif;
+  font-family: "Clash Display";
   font-style: normal;
   font-weight: 600;
   transition: 0.5s;
@@ -498,7 +507,7 @@ body {
   font-weight: 500;
   padding: 23px 0 20px;
   color: #101210;
-  font-family: "Clash Display", sans-serif;
+  font-family: "Clash Display";
   font-style: normal;
   margin-bottom: 0;
   margin-top: 11px;
@@ -511,7 +520,7 @@ body {
   font-size: 16px;
   line-height: 26px;
   text-align: center;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans";
 }
 .feature-section .about-bg {
   padding: 90px 0 0;
@@ -525,7 +534,7 @@ body {
   font-size: 16px;
   line-height: 26px;
   text-align: left;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans";
 }
 .feature-section .about-bg .about-item-list {
   padding: 20px 0 0;
@@ -542,7 +551,7 @@ body {
   color: #7b7b7b;
   font-size: 16px;
   line-height: 26px;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans";
 }
 .feature-section .about-bg .about-btn {
   padding: 28px 0 0;
@@ -575,7 +584,7 @@ body {
   font-weight: 500;
   display: inline-block;
   color: #101210;
-  font-family: "Clash Display", sans-serif;
+  font-family: "Clash Display";
   font-style: normal;
   margin-bottom: 0;
   margin-top: 11px;
@@ -589,7 +598,7 @@ body {
   font-size: 16px;
   line-height: 26px;
   text-align: left;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans";
 }
 .feature-section .counter-bg .dream-shape3 {
   position: absolute;
@@ -627,7 +636,7 @@ body {
   font-weight: 500;
   display: inline-block;
   color: #fff;
-  font-family: "Clash Display", sans-serif;
+  font-family: "Clash Display";
   font-style: normal;
   transition: 0.5s;
   line-height: 0;
@@ -640,7 +649,7 @@ body {
   color: #fff;
   font-size: 16px;
   line-height: 26px;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans";
   margin: 0px;
 }
 .service-section .upper2 {
@@ -662,7 +671,7 @@ body {
   font-weight: 500;
   transition: 0.5s;
   color: #101210;
-  font-family: "Clash Display", sans-serif;
+  font-family: "Clash Display";
   font-style: normal;
   margin-bottom: 0;
   margin-top: 11px;
@@ -676,7 +685,7 @@ body {
   font-weight: 400;
   line-height: 26px;
   text-align: left;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans";
   font-size: 16px;
 }
 .service-section .upper2 .service-content .service-btn {
@@ -688,7 +697,7 @@ body {
   z-index: 2;
   line-height: 26px;
   text-align: left;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans";
   font-size: 16px;
 }
 .service-section .upper2 .service-content .service-btn i {
@@ -717,7 +726,7 @@ body {
   font-weight: 500;
   transition: 0.5s;
   color: #101210;
-  font-family: "Clash Display", sans-serif;
+  font-family: "Clash Display";
   font-style: normal;
   margin-bottom: 0;
   margin-top: 11px;
@@ -731,7 +740,7 @@ body {
   font-weight: 400;
   line-height: 26px;
   text-align: left;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans";
   font-size: 16px;
 }
 .service-section .upper .service-content .service-btn {
@@ -743,7 +752,7 @@ body {
   z-index: 2;
   line-height: 26px;
   text-align: left;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans";
   font-size: 16px;
 }
 .service-section .upper .service-content .service-btn i {
@@ -772,7 +781,7 @@ body {
   font-weight: 500;
   transition: 0.5s;
   color: #101210;
-  font-family: "Clash Display", sans-serif;
+  font-family: "Clash Display";
   font-style: normal;
   margin-bottom: 0;
   margin-top: 11px;
@@ -786,7 +795,7 @@ body {
   font-weight: 400;
   line-height: 26px;
   text-align: left;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans";
   font-size: 16px;
 }
 .service-section .upper3 .service-content .service-btn {
@@ -798,7 +807,7 @@ body {
   z-index: 2;
   line-height: 26px;
   text-align: left;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans";
   font-size: 16px;
 }
 .service-section .upper3 .service-content .service-btn i {
@@ -865,7 +874,7 @@ body {
   font-weight: 600;
   display: inline-block;
   color: #101210;
-  font-family: "Clash Display", sans-serif;
+  font-family: "Clash Display";
   font-style: normal;
   transition: 0.5s;
 }
@@ -924,11 +933,11 @@ body {
 }
 .testo-section .testi-list .slider-container .testi-single-box .people-head .people-name span {
   color: #7b7b7b;
-  font-size: 26px;
+  font-size: 16px;
   font-weight: 400;
   line-height: 26px;
   text-align: left;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans";
 }
 .testo-section .testi-list .slider-container .testi-single-box .description p {
   padding: 45px 0 28px;
@@ -957,6 +966,35 @@ body {
   letter-spacing: 7px;
   color: #ffa133;
 }
+.testo-section .testi-list .slider-container .slick-dots {
+  bottom: -50px;
+}
+.testo-section .testi-list .slider-container .slick-dots li {
+  width: 13px;
+  height: 13px;
+  border-radius: 10px;
+  background-color: #52daa8;
+  display: inline-block;
+  margin-right: 7px;
+}
+.testo-section .testi-list .slider-container .slick-dots li button::before {
+  content: "";
+}
+.testo-section .testi-list .slider-container .slick-dots li.slick-active {
+  background-color: #ffdd5d;
+  position: relative;
+  z-index: 1;
+}
+.testo-section .testi-list .slider-container .slick-dots li.slick-active button:before {
+  position: absolute;
+  content: "";
+  left: -4px;
+  top: -4px;
+  width: 21px;
+  height: 21px;
+  border: 1px solid #ffdd5d;
+  border-radius: 15px;
+}
 .testo-section .about-bg2 {
   padding-top: 110px;
   border-top: 1px solid rgba(16, 18, 16, 0.1019607843);
@@ -969,7 +1007,7 @@ body {
   font-weight: 600;
   display: inline-block;
   color: #101210;
-  font-family: "Clash Display", sans-serif;
+  font-family: "Clash Display";
   font-style: normal;
   transition: 0.5s;
 }
@@ -978,7 +1016,7 @@ body {
   margin: auto;
   color: #7b7b7b;
   font-size: 16px;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans";
   line-height: 26px;
 }
 .testo-section .about-bg2 .about-counter {
@@ -997,7 +1035,7 @@ body {
 }
 .testo-section .about-bg2 .about-counter .counter-num .counter-title h1 {
   color: #101210;
-  font-family: "Clash Display", sans-serif;
+  font-family: "Clash Display";
   font-style: normal;
   margin-bottom: 0;
   margin-top: 11px;
@@ -1020,7 +1058,7 @@ body {
   position: relative;
   z-index: 2;
   font-size: 16px;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans";
   line-height: 26px;
 }
 .testo-section .about-bg2 .about-profile-btn a i {
@@ -1060,7 +1098,7 @@ body {
   font-size: 38px;
   line-height: 44px;
   margin: 0;
-  font-family: "Clash Display", sans-serif;
+  font-family: "Clash Display";
   font-style: normal;
   font-weight: 600;
   transition: 0.5s;
@@ -1071,7 +1109,7 @@ body {
   font-style: normal;
   line-height: 26px;
   text-align: left;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans";
   font-size: 16px;
 }
 .call-to-action .dexon1-bg .call-btn a {
@@ -1122,7 +1160,7 @@ body {
   font-size: 30px;
   font-weight: 500;
   padding: 18px 0 13px;
-  font-family: "Clash Display", sans-serif;
+  font-family: "Clash Display";
   font-style: normal;
   margin-bottom: 0;
   margin-top: 11px;
@@ -1134,7 +1172,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans";
 }
 
 .footer-section {
@@ -1152,7 +1190,7 @@ body {
   font-size: 16px;
   line-height: 26px;
   text-align: left;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans";
 }
 .footer-section .social-media a {
   color: #a8a8b3;
@@ -1167,7 +1205,7 @@ body {
   margin-top: -5px;
   padding: 0 0 21px;
   color: #101210;
-  font-family: "Clash Display", sans-serif;
+  font-family: "Clash Display";
   font-style: normal;
   margin-bottom: 0;
   line-height: 1.2;
@@ -1224,7 +1262,7 @@ body {
   font-size: 16px;
   line-height: 26px;
   text-align: left;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans";
 }
 .footer-section .footer-bg {
   position: relative;
@@ -1238,7 +1276,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans";
 }
 .footer-section .footer-bg .text-right {
   text-align: right;
@@ -1256,7 +1294,7 @@ body {
   color: #7b7b7b;
   font-size: 16px;
   line-height: 26px;
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Kumbh Sans";
 }
 .footer-section .footer-bg .text-right ul li a {
   color: #101010;
@@ -1442,5 +1480,25 @@ body {
   .hero-section {
     position: relative;
     z-index: 2;
+  }
+  .testo-section .testi-list .slider-container .testi-single-box {
+    margin-right: 0px;
+    margin-top: 10px;
+    padding: 40px 22px 30px;
+  }
+  .testo-section .dream-bg .dreamit h1 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .testo-section .dream-bg .dreamit p {
+    font-size: 16px;
+    width: 88%;
+  }
+  .testo-section .dream-bg .testo-shape2 {
+    right: 2rem;
+    bottom: 7rem;
+  }
+  .testo-section .dream-bg .testo-shape1 {
+    left: 15px;
   }
 }/*# sourceMappingURL=main.css.map */

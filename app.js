@@ -5,6 +5,18 @@ $(document).ready(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplaySpeed: 1000,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 820,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        },
+      },
+    ],
   });
 
   let progressPath = document.querySelector(".prgoress_indicator path");
