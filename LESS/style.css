@@ -103,6 +103,13 @@ body {
   padding: 10px 30px;
   font-size: 14px;
 }
+.container-fluid .header-btn .btn:hover {
+  color: #101210;
+  background-color: #ffde5d;
+}
+.container-fluid .header-btn .btn:hover i {
+  color: #101210;
+}
 .container-fluid .header-btn i {
   padding-right: 5px;
   position: relative;
@@ -392,7 +399,7 @@ body {
 }
 .hero-section .hero-content .hero-content-text-btn .hero-button a {
   font-size: 16px;
-  padding: 12px 38px 15px;
+  padding: 0 38px 15px;
   background: #101210;
   color: #fff;
   font-weight: 500;
@@ -407,14 +414,21 @@ body {
   font-style: normal;
 }
 .hero-section .hero-content .hero-content-text-btn .hero-button a i {
-  font-size: 16px;
+  font-size: 26px;
   position: relative;
-  left: 8px;
+  left: 2px;
   top: 5px;
   transform: rotate(-52deg);
   transition: 0.5s;
   display: inline-block;
   color: #fff;
+}
+.hero-section .hero-content .hero-content-text-btn .hero-button a:hover {
+  background-color: #ffde5d;
+  color: #101210;
+}
+.hero-section .hero-content .hero-content-text-btn .hero-button a:hover i {
+  color: #101210;
 }
 .hero-section .hero-content .hero-all-shape .hero-shape {
   position: absolute;
@@ -597,6 +611,9 @@ body {
   transform: rotate(-45deg);
   display: inline-block;
 }
+.feature-section .about-bg .about-btn a:hover {
+  color: #ffde5d;
+}
 .feature-section .counter-bg {
   padding: 95px 0 0;
   position: relative;
@@ -717,13 +734,18 @@ body {
   font-weight: 500;
   text-decoration: underline;
   color: #101210;
-  transition: 0.5s;
   position: relative;
   z-index: 2;
   line-height: 26px;
   text-align: left;
   font-family: "Kumbh Sans", sans-serif;
   font-size: 16px;
+  transition: 0.5s;
+}
+.service-section .upper2 .service-content .service-btn:hover {
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
 }
 .service-section .upper2 .service-content .service-btn i {
   font-size: 28px;
@@ -772,13 +794,18 @@ body {
   font-weight: 500;
   text-decoration: underline;
   color: #101210;
-  transition: 0.5s;
   position: relative;
   z-index: 2;
   line-height: 26px;
   text-align: left;
   font-family: "Kumbh Sans", sans-serif;
   font-size: 16px;
+  transition: 0.5s;
+}
+.service-section .upper .service-content .service-btn:hover {
+  color: #ffde5d;
+  cursor: pointer;
+  transition: 0.5s;
 }
 .service-section .upper .service-content .service-btn i {
   font-size: 28px;
@@ -827,13 +854,18 @@ body {
   font-weight: 500;
   text-decoration: underline;
   color: #101210;
-  transition: 0.5s;
   position: relative;
   z-index: 2;
   line-height: 26px;
   text-align: left;
   font-family: "Kumbh Sans", sans-serif;
   font-size: 16px;
+  transition: 0.5s;
+}
+.service-section .upper3 .service-content .service-btn:hover {
+  color: #ffde5d;
+  cursor: pointer;
+  transition: 0.5s;
 }
 .service-section .upper3 .service-content .service-btn i {
   font-size: 28px;
@@ -1062,6 +1094,9 @@ body {
   top: 5px;
   transform: rotate(-45deg);
   display: inline-block;
+}
+.testo-section .about-bg2 .about-profile-btn a:hover {
+  color: #ffde5d;
 }
 .testo-section .about-bg2 .about-profile {
   padding-left: 110px;
@@ -1295,6 +1330,9 @@ body {
   transition: 0.5s;
   font-style: normal;
   font-weight: 400;
+}
+.footer-section .footer-bg .text-right ul li a:hover {
+  color: #ffde5d;
 }
 .prgoress_indicator {
   position: fixed;

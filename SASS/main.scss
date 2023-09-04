@@ -84,6 +84,13 @@ body {
       transition: $transtion-5;
       padding: $padding-10 $padding-30;
       font-size: $font-size-14;
+      &:hover {
+        color: $dark-color;
+        background-color: $bg-color;
+        i {
+          color: $dark-color;
+        }
+      }
     }
     i {
       padding-right: $padding-5;
@@ -368,7 +375,7 @@ body {
       .hero-button {
         a {
           font-size: $font-size-16;
-          padding: $padding-12 $padding-38 $font-size-15;
+          padding: 0 $padding-38 $font-size-15;
           background: $dark-color;
           color: $white-color;
           font-weight: 500;
@@ -382,14 +389,21 @@ body {
           text-decoration: none;
           font-style: normal;
           i {
-            font-size: $font-size-16;
+            font-size: $font-size-26;
             position: relative;
-            left: 8px;
+            left: 2px;
             top: 5px;
             transform: rotate(-52deg);
             transition: $transtion-5;
             display: inline-block;
             color: $white-color;
+          }
+          &:hover {
+            background-color: $bg-color;
+            color: $dark-color;
+            i {
+              color: $dark-color;
+            }
           }
         }
       }
@@ -506,6 +520,9 @@ body {
     border-radius: $b-r-30;
     filter: drop-shadow(0px 5px $font-size-15 $filter-coloe);
     transition: $transtion-5;
+    &:hover {
+      margin-top: $margin--20;
+    }
     .feature-content {
       text-align: center;
       h2 {
@@ -571,6 +588,9 @@ body {
         z-index: 2;
         i {
           @include rotateBtn;
+        }
+        &:hover {
+          color: $bg-color;
         }
       }
     }
@@ -701,6 +721,12 @@ body {
         text-align: left;
         font-family: "Kumbh Sans";
         font-size: $font-size-16;
+        transition: $transtion-5;
+        &:hover {
+          color: $white-color;
+          cursor: pointer;
+          transition: $transtion-5;
+        }
         i {
           @include rotateBtn;
         }
@@ -750,6 +776,12 @@ body {
         text-align: left;
         font-family: "Kumbh Sans";
         font-size: $font-size-16;
+        transition: $transtion-5;
+        &:hover {
+          color: $bg-color;
+          cursor: pointer;
+          transition: $transtion-5;
+        }
         i {
           @include rotateBtn;
         }
@@ -799,6 +831,12 @@ body {
         text-align: left;
         font-family: "Kumbh Sans";
         font-size: $font-size-16;
+        transition: $transtion-5;
+        &:hover {
+          color: $bg-color;
+          cursor: pointer;
+          transition: $transtion-5;
+        }
         i {
           @include rotateBtn;
         }
@@ -1069,6 +1107,9 @@ body {
         i {
           @include rotateBtn;
         }
+        &:hover {
+          color: $bg-color;
+        }
       }
     }
     .about-profile {
@@ -1318,6 +1359,9 @@ body {
             transition: $transtion-5;
             font-style: normal;
             font-weight: 400;
+            &:hover {
+              color: $bg-color;
+            }
           }
         }
       }
