@@ -1,4 +1,5 @@
 $border-color: rgba(16, 18, 16, 0.10196078431372549);
+$drop-shadow: drop-shadow(0px 5px 15px rgba(215, 215, 217, 0.3));
 $box-shadow: rgba(0, 0, 0, 0.3);
 $box-shadow-light: rgba(0, 0, 0, 0.1);
 $box-shadow-dark: rgba(187, 247, 55, 0.2);
@@ -23,6 +24,7 @@ $font-size-14: 14px;
 $font-size-15: 15px;
 $font-size-16: 16px;
 $font-size-18: 18px;
+$font-size-22: 22px;
 $font-size-25: 25px;
 $font-size-28: 28px;
 $font-size-38: 38px;
@@ -82,10 +84,13 @@ $padding-95: 95px;
 $margin-auto: 0 auto;
 $margin--95: -95px;
 $margin--5: -5px;
+$margin--20: -20px;
 $margin-100: 100px;
+$margin-10: -10px;
 $margin-115: 115px;
 $margin-120: 120px;
 $margin-20: 20px;
+$margin-27: 27px;
 $margin-21: 21px;
 $margin-28: 28px;
 $margin-3: 3px;
@@ -99,6 +104,7 @@ $margin-75: 75px;
 // border-radius
 
 $b-r-20: 20px;
+$b-r-25: 25px;
 $b-r-30: 30px;
 $b-r-5: 5px;
 $-b-r-50: 50px;

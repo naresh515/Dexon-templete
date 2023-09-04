@@ -922,11 +922,61 @@ body {
   text-align: right;
   animation: dance2 4s alternate infinite;
 }
-.testo-section .testi-list .owl-item .testi-single-box .company .rating ul {
+.testo-section .testi-list .slider-container .slick-active {
+  transition: 0.5s;
+}
+.testo-section .testi-list .slider-container .slick-active:hover {
+  margin-top: -10px;
+  transition: 0.5s;
+}
+.testo-section .testi-list .slider-container .testi-single-box {
+  padding: 40px 30px 30px;
+  filter: drop-shadow(0px 5px 15px rgba(215, 215, 217, 0.3));
+  background-color: #fff;
+  border-radius: 25px;
+  margin-top: 30px;
+  transition: 0.5s;
+  margin-right: 30px;
+}
+.testo-section .testi-list .slider-container .testi-single-box .people-head {
+  display: flex;
+  gap: 30px;
+}
+.testo-section .testi-list .slider-container .testi-single-box .people-head .people-name h2 {
+  font-size: 22px;
+  font-weight: 500;
+}
+.testo-section .testi-list .slider-container .testi-single-box .people-head .people-name span {
+  color: #7b7b7b;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  font-family: "Kumbh Sans", sans-serif;
+}
+.testo-section .testi-list .slider-container .testi-single-box .description p {
+  padding: 45px 0 28px;
+  margin-bottom: 27px;
+  border-bottom: 1px solid rgba(16, 18, 16, 0.10196078);
+  font-size: 17px;
+  color: #101210;
+  font-weight: 400;
+  font-style: normal;
+}
+.testo-section .testi-list .slider-container .testi-single-box .company {
+  display: flex;
+  justify-content: space-between;
+}
+.testo-section .testi-list .slider-container .testi-single-box .company .rating ul {
   margin: 0;
   padding: 0;
+  display: flex;
 }
-.testo-section .testi-list .owl-item .testi-single-box .company .rating ul li i {
+.testo-section .testi-list .slider-container .testi-single-box .company .rating ul li::marker {
+  display: none;
+  content: "";
+}
+.testo-section .testi-list .slider-container .testi-single-box .company .rating ul li i {
   font-size: 15px;
   letter-spacing: 7px;
   color: #ffa133;
