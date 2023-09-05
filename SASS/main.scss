@@ -2,20 +2,20 @@
 @import "variables";
 
 @font-face {
-  font-family: "Clash Display";
-  src: url("https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&family=Forum&display=swap");
+  font-family: "Clash";
+  src: url("../font-family/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Regular.otf");
 }
 
 @font-face {
-  font-family: "Kumbh Sans";
-  src: url("https://fonts.googleapis.com/css2?family=DM+Sans&family=DM+Serif+Display&family=Forum&family=Kumbh+Sans:wght@600&display=swap");
+  font-family: "Kumbh";
+  src: url("../font-family/static/KumbhSans-Light.ttf");
 }
 
 body {
   margin: $margin-auto;
   width: 100%;
   box-sizing: border-box;
-  font-family: "Kumbh Sans";
+  font-family: "Kumbh";
 }
 
 .navbar-nav {
@@ -71,33 +71,45 @@ body {
       }
     }
   }
-  .header-btn {
-    display: inline-block;
-    .btn {
-      font-weight: 500;
-      color: $white-color;
-      background: $dark-color;
-      border-radius: $b-r-5;
+  .dexon-menu {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -3px;
+    margin-left: 11px;
+    display: flex;
+    align-items: center;
+    .navbar-nav {
+      flex-direction: row;
+    }
+    .header-btn {
       display: inline-block;
-      position: relative;
-      z-index: 1;
-      transition: $transtion-5;
-      padding: $padding-10 $padding-30;
-      font-size: $font-size-14;
-      &:hover {
-        color: $dark-color;
-        background-color: $bg-color;
-        i {
+      .btn {
+        font-weight: 500;
+        color: $white-color;
+        background: $dark-color;
+        border-radius: $b-r-5;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        transition: $transtion-5;
+        padding: $padding-10 $padding-30;
+        font-size: $font-size-14;
+        &:hover {
           color: $dark-color;
+          background-color: $bg-color;
+          i {
+            color: $dark-color;
+          }
         }
       }
-    }
-    i {
-      padding-right: $padding-5;
-      position: relative;
-      top: 3px;
-      color: $bg-color;
-      transition: $transtion-5;
+      i {
+        padding-right: $padding-5;
+        position: relative;
+        top: 3px;
+        color: $bg-color;
+        transition: $transtion-5;
+      }
     }
   }
 }
@@ -113,6 +125,8 @@ body {
       transition: $transtion-5;
       margin: 0;
       padding: 0px;
+      position: absolute;
+      left: 0;
       a {
         display: block;
         padding: $padding-12 $padding-20;
@@ -194,7 +208,7 @@ body {
       top: 18px;
       line-height: $line-height-26;
       text-align: left;
-      font-family: "Kumbh Sans";
+      font-family: "Kumbh";
     }
     .humberg2 {
       width: 22px;
@@ -481,7 +495,7 @@ body {
         line-height: $line-height-44;
         margin: 0;
         color: $dark-color;
-        font-family: "Clash Display";
+        font-family: "Clash";
         font-style: normal;
         font-weight: 600;
         transition: $transtion-5;
@@ -530,7 +544,7 @@ body {
         font-weight: 500;
         padding: $padding-23 0 $padding-20;
         color: $dark-color;
-        font-family: "Clash Display";
+        font-family: "Clash";
         font-style: normal;
         margin-bottom: 0;
         margin-top: $font-size-11;
@@ -543,7 +557,7 @@ body {
         font-size: $font-size-16;
         line-height: $line-height-26;
         text-align: center;
-        font-family: "Kumbh Sans";
+        font-family: "Kumbh";
       }
     }
   }
@@ -557,7 +571,7 @@ body {
         font-size: $font-size-16;
         line-height: $line-height-26;
         text-align: left;
-        font-family: "Kumbh Sans";
+        font-family: "Kumbh";
       }
     }
     .about-item-list {
@@ -573,7 +587,7 @@ body {
           color: $gray-color;
           font-size: $font-size-16;
           line-height: $line-height-26;
-          font-family: "Kumbh Sans";
+          font-family: "Kumbh";
         }
       }
     }
@@ -607,7 +621,7 @@ body {
           font-weight: 500;
           display: inline-block;
           color: $dark-color;
-          font-family: "Clash Display";
+          font-family: "Clash";
           font-style: normal;
           margin-bottom: 0;
           margin-top: $font-size-11;
@@ -623,7 +637,7 @@ body {
           font-size: $font-size-16;
           line-height: $line-height-26;
           text-align: left;
-          font-family: "Kumbh Sans";
+          font-family: "Kumbh";
         }
       }
     }
@@ -661,7 +675,7 @@ body {
       font-weight: 500;
       display: inline-block;
       color: $white-color;
-      font-family: "Clash Display";
+      font-family: "Clash";
       font-style: normal;
       transition: $transtion-5;
       line-height: 0;
@@ -674,7 +688,7 @@ body {
       color: $white-color;
       font-size: $font-size-16;
       line-height: $line-height-26;
-      font-family: "Kumbh Sans";
+      font-family: "Kumbh";
       margin: 0px;
     }
   }
@@ -693,7 +707,7 @@ body {
         font-weight: 500;
         transition: $transtion-5;
         color: $dark-color;
-        font-family: "Clash Display";
+        font-family: "Clash";
         font-style: normal;
         margin-bottom: 0;
         margin-top: $font-size-11;
@@ -707,7 +721,7 @@ body {
         font-weight: 400;
         line-height: $line-height-26;
         text-align: left;
-        font-family: "Kumbh Sans";
+        font-family: "Kumbh";
         font-size: $font-size-16;
       }
       .service-btn {
@@ -719,7 +733,7 @@ body {
         z-index: 2;
         line-height: $line-height-26;
         text-align: left;
-        font-family: "Kumbh Sans";
+        font-family: "Kumbh";
         font-size: $font-size-16;
         transition: $transtion-5;
         &:hover {
@@ -748,7 +762,7 @@ body {
         font-weight: 500;
         transition: $transtion-5;
         color: $dark-color;
-        font-family: "Clash Display";
+        font-family: "Clash";
         font-style: normal;
         margin-bottom: 0;
         margin-top: $font-size-11;
@@ -762,7 +776,7 @@ body {
         font-weight: 400;
         line-height: $line-height-26;
         text-align: left;
-        font-family: "Kumbh Sans";
+        font-family: "Kumbh";
         font-size: $font-size-16;
       }
       .service-btn {
@@ -774,7 +788,7 @@ body {
         z-index: 2;
         line-height: $line-height-26;
         text-align: left;
-        font-family: "Kumbh Sans";
+        font-family: "Kumbh";
         font-size: $font-size-16;
         transition: $transtion-5;
         &:hover {
@@ -803,7 +817,7 @@ body {
         font-weight: 500;
         transition: $transtion-5;
         color: $dark-color;
-        font-family: "Clash Display";
+        font-family: "Clash";
         font-style: normal;
         margin-bottom: 0;
         margin-top: $font-size-11;
@@ -817,7 +831,7 @@ body {
         font-weight: 400;
         line-height: $line-height-26;
         text-align: left;
-        font-family: "Kumbh Sans";
+        font-family: "Kumbh";
         font-size: $font-size-16;
       }
       .service-btn {
@@ -829,7 +843,7 @@ body {
         z-index: 2;
         line-height: $line-height-26;
         text-align: left;
-        font-family: "Kumbh Sans";
+        font-family: "Kumbh";
         font-size: $font-size-16;
         transition: $transtion-5;
         &:hover {
@@ -896,7 +910,7 @@ body {
         font-weight: 600;
         display: inline-block;
         color: $dark-color;
-        font-family: "Clash Display";
+        font-family: "Clash";
         font-style: normal;
         transition: $transtion-5;
       }
@@ -962,7 +976,7 @@ body {
               font-weight: 400;
               line-height: $line-height-26;
               text-align: left;
-              font-family: "Kumbh Sans";
+              font-family: "Kumbh";
             }
           }
         }
@@ -1047,7 +1061,7 @@ body {
         font-weight: 600;
         display: inline-block;
         color: $dark-color;
-        font-family: "Clash Display";
+        font-family: "Clash";
         font-style: normal;
         transition: $transtion-5;
       }
@@ -1056,7 +1070,7 @@ body {
         margin: auto;
         color: $gray-color;
         font-size: $font-size-16;
-        font-family: "Kumbh Sans";
+        font-family: "Kumbh";
         line-height: $line-height-26;
       }
     }
@@ -1073,7 +1087,7 @@ body {
           align-items: center;
           h1 {
             color: $dark-color;
-            font-family: "Clash Display";
+            font-family: "Clash";
             font-style: normal;
             margin-bottom: 0;
             margin-top: $font-size-11;
@@ -1102,7 +1116,7 @@ body {
         position: relative;
         z-index: 2;
         font-size: $font-size-16;
-        font-family: "Kumbh Sans";
+        font-family: "Kumbh";
         line-height: $line-height-26;
         i {
           @include rotateBtn;
@@ -1145,7 +1159,7 @@ body {
         font-size: $font-size-38;
         line-height: $line-height-44;
         margin: 0;
-        font-family: "Clash Display";
+        font-family: "Clash";
         font-style: normal;
         font-weight: 600;
         transition: $transtion-5;
@@ -1156,7 +1170,7 @@ body {
         font-style: normal;
         line-height: $line-height-26;
         text-align: left;
-        font-family: "Kumbh Sans";
+        font-family: "Kumbh";
         font-size: $font-size-16;
       }
     }
@@ -1208,7 +1222,7 @@ body {
           font-size: $font-size-30;
           font-weight: 500;
           padding: $padding-18 0 $padding-13;
-          font-family: "Clash Display";
+          font-family: "Clash";
           font-style: normal;
           margin-bottom: 0;
           margin-top: $font-size-11;
@@ -1222,7 +1236,7 @@ body {
           font-size: $font-size-16;
           font-weight: 400;
           line-height: $line-height-26;
-          font-family: "Kumbh Sans";
+          font-family: "Kumbh";
         }
       }
     }
@@ -1242,7 +1256,7 @@ body {
       font-size: $font-size-16;
       line-height: $line-height-26;
       text-align: left;
-      font-family: "Kumbh Sans";
+      font-family: "Kumbh";
     }
   }
   .social-media {
@@ -1260,7 +1274,7 @@ body {
     margin-top: $margin--5;
     padding: 0 0 $padding-21;
     color: $dark-color;
-    font-family: "Clash Display";
+    font-family: "Clash";
     font-style: normal;
     margin-bottom: 0;
     line-height: $line-height-2;
@@ -1320,7 +1334,7 @@ body {
       font-size: $font-size-16;
       line-height: $line-height-26;
       text-align: left;
-      font-family: "Kumbh Sans";
+      font-family: "Kumbh";
     }
   }
   .footer-bg {
@@ -1335,7 +1349,7 @@ body {
         font-size: $font-size-16;
         font-weight: 400;
         line-height: $line-height-26;
-        font-family: "Kumbh Sans";
+        font-family: "Kumbh";
       }
     }
     .text-right {
@@ -1352,7 +1366,7 @@ body {
           color: $gray-color;
           font-size: $font-size-16;
           line-height: $line-height-26;
-          font-family: "Kumbh Sans";
+          font-family: "Kumbh";
           a {
             color: $light-dark-color;
             text-decoration: none;
