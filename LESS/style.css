@@ -405,11 +405,13 @@ body {
 }
 .hero-section .hero-content .hero-content-text-btn p {
   font-size: 18px;
-  width: 49%;
+  width: 50%;
   max-width: 100%;
   margin: auto;
   color: #101210;
   font-weight: 500;
+  font-family: "Kumbh";
+  line-height: 26px;
 }
 .hero-section .hero-content .hero-content-text-btn .hero-button a {
   font-size: 16px;
