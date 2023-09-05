@@ -380,11 +380,13 @@ body {
       margin-left: $margin-120;
       p {
         font-size: $font-size-18;
-        width: 49%;
+        width: 50%;
         max-width: 100%;
         margin: auto;
         color: $dark-color;
         font-weight: 500;
+        font-family: "Kumbh";
+        line-height: 26px;
       }
       .hero-button {
         a {
