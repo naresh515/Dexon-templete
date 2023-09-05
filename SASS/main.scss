@@ -3,7 +3,7 @@
 
 @font-face {
   font-family: "Clash";
-  src: url("../font-family/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Regular.otf");
+  src: url("../font-family/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Medium.otf");
 }
 
 @font-face {
@@ -552,7 +552,6 @@ body {
         transition: $transtion-5;
       }
       p {
-        padding: $padding-18 0 0;
         color: $gray-color;
         font-size: $font-size-16;
         line-height: $line-height-26;

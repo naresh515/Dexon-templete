@@ -34,7 +34,7 @@
 }
 @font-face {
   font-family: "Clash";
-  src: url("../font-family/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Regular.otf");
+  src: url("../font-family/ClashDisplay_Complete/Fonts/OTF/ClashDisplay-Medium.otf");
 }
 @font-face {
   font-family: "Kumbh";
@@ -569,7 +569,6 @@ body {
   transition: 0.5s;
 }
 .feature-section .feature-single-box .feature-content p {
-  padding: 18px 0 0;
   color: #7b7b7b;
   font-size: 16px;
   line-height: 26px;
